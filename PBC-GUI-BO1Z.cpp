@@ -8,7 +8,7 @@ LRESULT CALLBACK WndProc(
     _In_  LPARAM lParam
 );
 
-void ammo() {
+void cash() {
     LPCUWSTR gameWindow = L"Call of Duty®: BlackOps";
     HWND weed = FindWindow(0, gameWindow);
     DWORD process_ID;
@@ -109,7 +109,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wparam, LPARAM lParam)
         break;
     case WM_COMMAND:
         if (LOWORD(wparam) == 10000)
-            ammo();
+            cash();
         else if (LOWORD(wparam) == 20000)
             god_mode();
 
